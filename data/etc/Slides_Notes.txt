@@ -1,0 +1,57 @@
+SLIDE 1
+--Good Afternoon, I'm here to present my project on Statistical Modeling with Python.
+
+SLIDE 2
+--Our city of choice is Hamilton. It was chosen because the number of bike stations is manageable with our limited API calls. My points of interests are restaurants, amusement parks and museums.
+
+SLIDE 3
+-- Problem Definition: 
+We are looking for the POIs (restaurants, amusement parks, museums) impact on bike-sharing usage in Hamilton, ON.
+
+-- Data Collection:
+I used the bike-sharing data I got from CityBikes API to get data on my Points of Interest within 1000m radius of a bike station from Yelp and from Foursquare.
+
+-- Data Cleaning and Integration:
+I standardized the addresses, the categories and filled in missing values to prepare it for putting into SQLite.
+
+-- Exploratory Data Analysis:
+I visualized relationships and patterns between POI density and bike availability.
+
+-- Model Building:
+I did a regression and a classification model to understand and predict relationships between POI characteristics and bike station activity.
+
+SLIDE 4: Moving over to results.
+
+SLIDE 5: The main difference between the two is Foursquare has better POI coverage, and Yelp is better for assessing/finding popularity metrics.
+
+SLIDE 6 - Oh, fun. There's not much here that actually matters or made a lot of sense. We're gonna go through what did or sort of did in the next slides.
+
+SLIDE 7 - This chart suggests stations with low bike availability might reflect high-traffic areas near POIs. However, the trend isn’t strong enough to be significant.
+
+SLIDE 8 - This chart shows that stations with higher POI counts are clustered around specific areas, but it could just be closer to downtown areas vs the outskirts.
+
+SLIDE 9
+-- This is the OLS Regression Results. The r-squared says that this model explains 17.5% of the variance in the density of POIs in the area, and the adjusted one is about 15.7% which is even lower. So, the predictors don't really fully explain the target variables.
+
+-- With the coefficients, the only statistically significant one is the average rating of a POI, meaning... a one-unit increase in average rating is associated with 17.73 more POIs and this is considered statistically significant.
+
+SLIDE 10
+-- The most meaningful relationship here would be poi_count and poi_avg_rating with a p-value of 0.4
+-- This says areas with more POIs have higher ratings, indicative of these areas being more desirable for starting a business in these popular locations.
+
+SLIDE 11 - I did a multi-class classification model. So, I categorized the POIs into 3 categories. Low, Mid and High. With the confusion matrix... the overall model is correct only 45% of the time.
+
+SLIDE 12
+--The analysis shows limited significance in the findings. While stations with low bike availability may reflect high-traffic areas, the trend isn't strong. Museums and restaurants are closer to bike stations than amusement parks, likely due to their higher density overall. Higher POI counts cluster near downtown areas rather than the outskirts.
+--The regression model explains only 17.5% of the variance in POI density, with the average POI rating being the only statistically significant predictor. This suggests that higher-rated areas are more desirable for businesses. However, the multi-class classification model was only 45% accurate, performing no better than random guessing.
+
+SLIDE 13
+-- My initial city of choice was Toronto. It had 861 stations, so I would have had to spread it out over a few days to proceed further in the project. So, I started over with a new city, which is Hamilton.
+-- In the 2nd run, the files were confusing me. I lost track between notebooks, codes and CSVs, but I learned so much more about how to do it better and faster…
+-- I restarted a 2nd time with the same city and I was able to get back to where I was in about 2hrs.
+
+SLIDE 14
+--I thought about expanding to multiple cities to compare bike-sharing activities across different environments. And also building a list of the best businesses accessible by bike for each city.
+--It would also be nice to compare how bike availability fluctuates at different times of day and days of the week.
+
+SLIDE 15 -- END

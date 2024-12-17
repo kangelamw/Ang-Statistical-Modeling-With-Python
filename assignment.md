@@ -24,7 +24,6 @@ Your tasks are as follows:
 4. Create a DataFrame for the Yelp results and Foursquare results. 
 5. Compare the quality of the Yelp and Foursquare API. For your location, which API gives you the most complete information/better coverage? *NOTE:* Your definition of 'coverage' is up to you. It could be simple 'number of POIs in the area', but it could also be something more specific like 'number of reviews per POI', or 'number of different attributes of each POI'.
 
-
 Complete the **yelp_foursquare_EDA.ipynb** notebook to demonstrate how you executed the tasks above.
 
 ## Part 3: Joining Data
