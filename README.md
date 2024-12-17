@@ -100,6 +100,8 @@ Using the CityBikes API, I performed the following steps:
 <br>
 
 ### Part 2: Connecting to Foursquare and Yelp APIs
+> Seem more about the process [here](./notebooks/yelp_foursquare_EDA.ipynb).
+
 - **Connected to Foursquare API:** Utilized the Foursquare Places API to gather POI data.Connected to Yelp API: Leveraged the Yelp Fusion API for similar POI information.
 - **Queried POIs Near Bike Stations:** For each bike station in Hamilton, retrieved nearby restaurants,  amusement parks, and museums.
 - **Created DataFrames:** Organized the retrieved data into separate Pandas DataFrames for Yelp and Foursquare results.
