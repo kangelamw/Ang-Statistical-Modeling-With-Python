@@ -252,4 +252,4 @@ Through data collection, cleaning, analysis, and modeling, valuable insights wer
 The comparative analysis of Yelp and Foursquare highlighted the strengths of each API, informing future data-driven urban planning and bike-sharing service optimizations.
 
 ### Grade:
-![](../../_etc/python.png)
+![](./images/python.png)
