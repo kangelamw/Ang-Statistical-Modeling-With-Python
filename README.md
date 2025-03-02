@@ -250,3 +250,6 @@ This project successfully integrated bike-sharing data with POIs from Yelp and F
 Through data collection, cleaning, analysis, and modeling, valuable insights were gained into how the distribution and characteristics of POIs influence bike-sharing usage.
 
 The comparative analysis of Yelp and Foursquare highlighted the strengths of each API, informing future data-driven urban planning and bike-sharing service optimizations.
+
+### Grade:
+![](../../_etc/python.png)
